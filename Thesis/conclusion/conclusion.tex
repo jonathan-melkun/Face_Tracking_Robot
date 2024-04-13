@@ -1,0 +1,46 @@
+\chapter{Conclusion}
+The project was largely successful, producing a working finished product and receiving generally positive feedback. The results of the project give good evidence to support the hypothesis outlined at the start of the paper; that perhaps there really is something about one-eyed robots that makes them more likeable. Of course, countless challenges and setbacks were met along the way, and numerous things were planned and scrapped or scaled back in order to meet the deadline. The end result is that the robot can track a face, and in that sense this project was a success.
+
+\section{Project Management}
+Figure \ref{tab:timeline} shows a summarized timeline of the project, noting the big milestones and dates they were achieved.  Some things to note are that the progress was slow for most of the year. By the halfway point in the year, a concrete concept was developed, but this was fell short of the initial goal of having the project physically manufactured by the end of the fall semester to be shown at the PDR presentation. As such, the timeline had to go through a few revisions, especially towards the end of the project. Progress started picking up however around March 1, where after this point the project was worked on in some capacity every day, no matter how little. That little bit was just the starting point needed to get the ball rolling, and the project progressed rapidly after this. It was at this point that a worklog was established to track the hours put into the project not only for documentation purposes but also to provide motivation. Even when hitting setbacks or having to redo things entirely, the hour counter was still going up, more entries were being put into the worklog and the project was still making progress. Progress is certainly not linear. The full worklog can be found in Appendix \ref{ch:worklog}. The total amount of hours spent on this thesis, according to the worklog, is 194 hours, excluding the writing of the report. In the end, all the milestones were met and the robot was functioning as intended.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Date & Milestone\\
+        \hline
+        \hline
+        10/24/2022 & Initial Design Ideation Complete \\
+        \hline
+11/22/2022&Started Ordering Materials\\
+\hline
+3/1/2023&First testing with Electrical Components\\
+\hline
+3/2/2023&Put in big order for materials\\\hline
+3/8/2023&Finalized dimensions of the eye based on camera\\\hline
+3/17/2023&First working prototype of the eyeball subassembly\\\hline
+3/23/2023&Final CAD model assembled with all the parts\\\hline
+3/29/2023&Full Assembly manufactured and assembled, started electronics\\\hline
+4/4/2023&Python face recognition code working\\\hline
+4/7/2023&Figured out how to send/receive serial data with an echo program\\\hline
+4/10/2023&Face following algorithm working\\\hline
+4/11/2023&Physical model finalized\\\hline
+4/19/2023&Finishing aesthetic touches added\\\hline
+
+
+    \end{tabular}
+    \caption{Project timeline.}
+    \label{tab:timeline}
+\end{table}
+
+The project's allocated budget was \$1000. This included everything from the raw materials to the tools and components for assembly. One thing to note is that these components are typically sold in bulk, so there are many extra parts left over. Additionally, duplicate parts for the motors and microcontroller were ordered to keep the project on track in case a component got fried. Otherwise, the project would be delayed by an entire week to wait for the replacement component to come in. Speaking of this, another issue was delivery time of the materials; the project simply could not get done in the last minute because of this constraint. As such, many components were ordered before they were even put into the CAD model, leading to some waste when the component was actually unnecessary. Given these challenges however, the project still managed to stay within the budget constraint at a total cost of \$981.82. Additionally, costs for a future project would be much less as many of the supplies bought in bulk can be reused, like the fasteners, wires and connectors, tools, and duplicate components. The full bill of materials can be found in Appendix \ref{ch:bom}.
+
+\section{Future Work}
+Future work on this project can be divided into hardware and software issues. At this point in the project the hardware issues are the lesser of the two categories, but there are still improvements that can be made. One thing that was an issue was the relatively cumbersome assembly process. Everything was mounted with screws, which meant that a screwdriver had to fit in the area to screw them in. Unfortunately there were some tight spaces in the design and some screws were possible to reach but with great difficulty. For some parts such as the servos the entire assembly would have to be taken apart to remove them since the screws were on the underside of the component. Another thing to change would be to standardize the screw size across all components. Each module was designed separately and pre-bought components all had differently sized screw holes, so a future iteration would only have two or three screw sizes at set lengths to further expedite the assembly process. Time did not allow for another revision to mitigate these issues, so the project had to proceed with these inconveniences. A future iteration would improve the assembly process to the point that anyone could assemble it by themselves. An instruction manual would also be a good step in making this a real product that a consumer could purchase.
+
+Another area that could be explored is different manufacturing methods for the parts. Many parts were 3D printed, but this actually makes them weaker than designed. This is because the layer lines act as stress concentrators, causing the parts to snap along them. This happened multiple times and had to be fixed on the fly with superglue. A future project could explore a fully sheetmetal chassis or more sophisticated plastics manufacturing processes like injection molding.
+
+Moving onto the electronics, one of the main limitations of the current robot is that it requires a laptop to run all the facial recognition code. A future iteration of the robot would be standalone, with something like a Raspberry Pi to run the facial recognition algorithm. This was not implemented on this project due to time constraints, but a final product would certainly be able to run standalone.
+
+On the software side, there is arguably the most room for expansion. Now that the eye mechanism is working, the software of the robot can be expanded on to make it more than a proof of concept. A microphone and speaker were incorporated into the design but were not utilized to their full potential. In the future, more sophisticated software could be written to integrate ChatGPT into the robot to make it possible to hold an actual conversation with the robot and speak to it just as one would to another person. This would be facilitated with the eye contact from the eye mechanism. This would turn this robot into a more marketable product to create a truly useful personal assistant robot.

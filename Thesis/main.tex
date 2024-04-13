@@ -1,0 +1,77 @@
+\documentclass[lof,lot,12pt,filecopy]{puseniorthesis}
+%options to class:
+% lof - generate list of figures
+% lot - generate list of tables
+% Xpt - font size
+% filecopy - note that this is 'File Copy' on title page
+% advisercopy - note that this is 'Adviser Copy' on title page
+% readercopy - note that this is 'Reader Copy' on title page
+% progress - change title page to say 'Progress Report' instead of 'Final Report'
+
+\usepackage{xcolor}
+\usepackage{graphicx} %need for \includegraphics
+\usepackage{amsmath}
+
+\usepackage{listings}          % for creating language style
+\usepackage{color}
+\input{arduinoLanguage.tex}    % adds the arduino language
+%% Define an Arduino style fore use later %%
+\lstdefinestyle{myArduino}{
+  language=Arduino,
+  %% Add other words needing highlighting below %%
+  morekeywords=[1]{},                  % dark green
+  morekeywords=[2]{FILE_WRITE},        % light blue
+  morekeywords=[3]{SD, File},          % bold orange
+  morekeywords=[4]{open, exists},      % orange
+  %% The lines below add a nifty box around the code %%
+  frame=shadowbox,                    
+  rulesepcolor=\color{arduinoBlue},
+}
+\usepackage{pythonhighlight}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[style=ieee]{biblatex}
+\addbibresource{Thesis-La.bib}
+
+%required inputs:
+\author{Jonathan Melkun}
+\classyear{`23}
+\adviser{Prof. Daniel Nosenchuck, Alexander Gaillard}
+\reader{Prof. Anirudha Majumdar}
+\title{Design of a One-Eyed Face Tracking Robot to Facilitate Human-Robot Interaction}
+\dept{Mechanical and Aerospace Engineering}
+\submitdate{April 26, 2023}
+\course{MAE 442}
+\abstract{\input abstract} %read from file abstract.tex
+
+%optional inputs (any of these can be omitted)
+\acknowledgements{\input thanks}
+
+\numberwithin{equation}{section}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+
+\include{Thesis/ch1/intro}
+\include{Thesis/ch2/ch2}
+\include{Thesis/ch3/physical}
+\include{Thesis/ch4/electronics}
+\include{Thesis/ch5/results}
+\include{Thesis/conclusion/conclusion}
+
+\printbibliography
+
+\appendix
+
+\include{Thesis/appendix/videos}
+\include{Thesis/appendix/photos}
+\include{Thesis/appendix/python}
+\include{Thesis/appendix/arduino}
+\include{Thesis/appendix/worklog}
+\include{Thesis/appendix/bom}
+
+
+\end{document}
