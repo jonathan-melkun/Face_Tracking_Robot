@@ -8,5 +8,6 @@ tracking robot that a user would be able to maintain eye contact with. The goal 
 make it easier for a person to have a conversation with the robot, facilitating human-
 robot interaction. The project was successful in that regard as the robot accurately
 tracks faces and peer feedback has been largely positive.
-
+<p align=center>
 <img src="mr_i.jpg" width=50%>
+</p>
